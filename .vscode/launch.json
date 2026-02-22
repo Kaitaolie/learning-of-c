@@ -2,6 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Run helloworld.exe",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/helloworld.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "preLaunchTask": "build active file",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe"
+    },
+    {
       "name": "Debug active file",
       "type": "cppdbg",
       "request": "launch",
@@ -14,11 +28,7 @@
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
       "preLaunchTask": "build active file"
-    }
-  ]
-}
-{
-    "configurations": [
+    },
     {
         "name": "(gdb) Windows 上的 Bash 启动",
         "type": "cppdbg",
@@ -48,5 +58,5 @@
             }
         ]
     }
-    ]
+  ]
 }
