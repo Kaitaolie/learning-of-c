@@ -6,6 +6,11 @@ int main()
     int a = 10;
     int b = 20;
     int c = findMaxNum(a, b);
-    printf("%d\n", c);
+
+
+    char d = 97; 
+
+    // printf("%s\n", a);
+    printf("%c\n", d);
     return 0;
 }
