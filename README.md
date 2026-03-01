@@ -5,7 +5,7 @@ A repository to record my C learning: notes, exercises and example programs.
 
 ## Tip
 
-- If you use Git through Clash, enable TUN mode before using `git`.
+- ~~If you use Git through Clash, enable TUN mode before using `git`.~~*(Throgh I worte this tip not long ago, while struggling to resolve the JSON issue, I updated Clash and found that whether TUN mode may interfere with the host-to-WSL network mapping on Windows, it can even cause git to fail. )*
 
 ## Learning Log
 
