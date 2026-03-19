@@ -7,8 +7,7 @@ int main()
     int b = 20;
     int c = findMaxNum(a, b);
 
-
-    char d = 97; 
+    char d = 97;
 
     // printf("%s\n", a);
     printf("%c\n", d);

@@ -51,6 +51,7 @@ A repository to record my C learning: notes, exercises and example programs.
          for (; i <= b; i += 6) {
             sum =sum + i;                                    
          }
+         
          // 输出结果
          printf("[%d, %d] 区间内能被6整除的整数之和为: %d\n", a, b, sum);
          return 0;
