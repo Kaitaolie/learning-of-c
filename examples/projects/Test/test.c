@@ -9,7 +9,6 @@ int main()
 
     char d = 97;
 
-    // printf("%s\n", a);
     printf("%c\n", d);
     return 0;
 }

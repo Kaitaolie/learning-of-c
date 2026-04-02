@@ -1,3 +1,5 @@
 .gitignore
 *.exe
-.json
+*.out
+*.o
+*~

@@ -43,22 +43,3 @@ int main(void)
     printf("%d是一个素数\n", n);
     return 0;
 }
-
-
-// #include <stdio.h>
-// int main(void)
-// 	{
-// 	int i,n,m=1;
-
-// 	printf("n=");
-// 	scanf("%d",&n);
-	
-// 	for(i=1;i<=n;i++)
-// 		{
-// 			m=m*i;
-//    		 }
-	
-// 	printf("%d\n", m);
-
-// 	return 0;
-// }

@@ -4,9 +4,28 @@ A repository to record my C learning: notes, exercises, and example programs.
 
 ## Table of Contents
 
+- [Project Structure](#project-structure)
 - [Example Programs](#example-programs)
 - [Learning Log](#learning-log)
 - [Tips](#tips)
+
+## Project Structure
+
+This repository is organized for learning C with clean source-only code directories:
+
+- `examples/`: sample C programs and small demo projects
+- `exercises/`: practice problems and algorithm exercises
+- `notes/`: study notes and reference material
+- `CODE_EXPLANATION.md`: independent explanations of key examples
+- `.vscode/`: VS Code tasks and launch settings
+
+> 已清理编译产物，保留 `.c` / `.h` 源文件，避免将可执行文件提交到仓库。
+
+## Recent Updates
+
+- 2026-04-02: 新增 `docs/` 目录用于存放 Markdown 文档。
+- 2026-04-02: 生成 `docs/all_c_files.md`，汇总当前仓库内所有 `.c` 文件的完整源码。
+- 2026-04-02: 生成 `docs/experiment1_experiment.md`，记录最近修改的 `examples/projects/experiment1/experiment.c` 内容。
 
 ## Example Programs
 
