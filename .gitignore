@@ -1,5 +1,48 @@
-.gitignore
-*.exe
-*.out
+# 编译产物
 *.o
+*.a
+*.so
+*.out
+*.exe
 *~
+
+# 可执行文件（未扩展名的二进制）
+experiment
+array
+str
+average_score
+bubbleSort
+function
+loop
+points
+distanceFigureOut
+compare_sizes
+test
+prime
+DNIT
+DFTI
+pointer
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*.VS.sln
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.zip
+
+# 临时和备份文件
+*.bak
+*.tmp
+*.log
+backup.txt
+demo.txt
+source.txt
+*.dat
+
+# Windows 特定
+*.dll

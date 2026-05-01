@@ -28,7 +28,7 @@ int main(void)
         }
     }
 
-    average = sum / n;
+    average = 1.0 * sum / n;
 
     printf("average = %.1f\n", average);
     printf("count = %d\n", count); 
