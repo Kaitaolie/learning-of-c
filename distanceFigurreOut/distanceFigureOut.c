@@ -1,16 +1,24 @@
 #include <stdio.h>
 #include <math.h>
 
+// 清理输入缓冲区，防止 EOF 时死循环
+static void clearBuffer(void)
+{
+    int ch;
+    while ((ch = getchar()) != '\n' && ch != EOF);
+}
+
 int coordinateInput(double *a, double *b, int c);
 int main(void)
 {
-    char charInput;
-    double n1, e1; 
+    int charInput; // getchar() 返回 int，需兼容 EOF
+    double n1, e1; // n = North(北坐标), e = East(东坐标)
     double n2, e2, s;
 
     // 使用 do-while 循环可以直接进入循环，不用初始化 charinput
-    do{
+    do {
         // 为防止重复代码段输入，我定义一个函数控制数据输入
+        // 输入失败时函数返回 1，while 即"失败则重试"
         while (coordinateInput(&n1, &e1, 1));
         while (coordinateInput(&n2, &e2, 2));
 
@@ -23,28 +31,28 @@ int main(void)
 
         // 退出循环条件判断
         charInput = getchar();
-        while (getchar() != '\n');
-    } while (charInput != 'Q' && charInput != 'q');
+        clearBuffer();
+    } while (charInput != 'Q' && charInput != 'q' && charInput != EOF);
 
     return 0;
 }
 
 // 坐标值输入函数，由于需要通过函数初始化变量所以使用指针
+// 返回 0 表示输入成功，1 表示输入失败（调用方 while 循环重试）
 int coordinateInput(double *a, double *b, int c)
 {
     // 定义一个检查值，判断输入是否错误
-    int checkValue;
-    checkValue = 0;
-    
-    printf("Please enter the coordinate(N%d E%d):", c, c);
-    if(scanf("%lf %lf", a, b) != 2){
+    int checkValue = 0;
+
+    printf("Please enter the coordinate(N%d E%d): ", c, c);
+    if (scanf("%lf %lf", a, b) != 2) {
         printf("The value is Invalid! Please try again!\n");
         // 如果输出数据类型不匹配步入下一个循环
         checkValue = 1;
     }
     // 清理缓冲区
-    while (getchar() != '\n');
-    
+    clearBuffer();
+
     // 此处说明一下为什么不直接 "retuen 0" 或 "retuen 1"
     // 因为除了控制数据的输入输出之外，函数还要清理缓冲区
     // 如果我们在 if 语段里面 retuen 1 程序会离开函数并返回1
